@@ -28,7 +28,7 @@ public class CookerGridAdapter extends BaseAdapter {
 
     public CookerGridAdapter(Context c, List<Cooker> cookerItems) {
 
-        mContext = c;
+        mContext = dd;
 
         this.cookerItems = cookerItems;
         cookerItemsSearched = new ArrayList<Cooker>();
