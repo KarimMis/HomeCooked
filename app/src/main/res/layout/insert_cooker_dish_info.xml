@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CookerInsertsData.InsertCookerDishInfo"
+    android:weightSum="1">
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose Dish  Image"
+        android:background="@color/colorAccent"
+        android:textColor="@android:color/black"
+        android:id="@+id/buttonChoose_dishimage" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="0.53" />
+
+
+    <EditText
+        android:id="@+id/dish_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dish name"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+
+
+    <EditText
+        android:id="@+id/dish_ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dish ingredients.."
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+
+
+    <EditText
+        android:id="@+id/dish_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dish summary"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+
+
+    <EditText
+        android:id="@+id/dish_serve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dish serves how many persons? you can write fixed or range number (ex 4 or 4-6)"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/dish_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Dish weight by grams"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/dish_prepared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Time to prepared by minutes"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/dish_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="price"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insert data"
+        android:textColor="@android:color/black"
+        android:background="@color/colorAccent"
+        android:id="@+id/buttonUpload_dishimage"
+        />
+
+
+</LinearLayout>

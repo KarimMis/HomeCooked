@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="#fff">
+
+
+
+
+
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/dishimage"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@null"
+                android:elevation="4dp"
+                android:visibility="visible"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </ImageView>
+
+
+            <LinearLayout
+                    android:id="@+id/basic_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/dishimage"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                     android:weightSum="2"
+                    android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/dish_name_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:text="Albetshino"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="26dp" />
+
+                <customfonts.MyTextView
+                    android:id="@+id/dish_price_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="$ 250"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="26dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/cooking_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/basic_info"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:padding="16dp"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/clock"
+                        android:layout_width="48dp"
+                        android:layout_height="36dp"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/clock" />
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:paddingTop="4dp"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textAlignment="center"
+                        android:text="PREPARATION" />
+
+                    <TextView
+                        android:id="@+id/dish_preparation_view"
+                        android:paddingTop="3dp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"
+                        android:text="10 mins" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:id="@+id/weight"
+                        android:layout_width="48dp"
+                        android:layout_height="36dp"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/weight" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:paddingTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:text=" WEIGHT" />
+
+                    <TextView
+                        android:id="@+id/dish_weight_view"
+                        android:layout_gravity="center"
+                        android:paddingTop="3dp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"
+                        android:text="100 gm" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+
+
+                    <ImageView
+                        android:id="@+id/serves"
+                        android:layout_width="48dp"
+                        android:layout_height="36dp"
+
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:background="@drawable/serves" />
+
+                    <TextView
+                        android:id="@+id/textview12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingTop="4dp"
+                        android:text=" SERVES"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dish_serves_view"
+                        android:layout_gravity="center"
+                        android:paddingTop="3dp"
+                        android:textAlignment="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/md_black_1000"
+                        android:textStyle="bold"
+                        android:text="4-6 persons" />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cooking_info"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:background="#c0c0c0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:text="Ingredients"
+                    android:textStyle="bold"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/dish_ingredients_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:textStyle="italic"
+                    android:text="btats,roz,carrot, onion"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="16dp" />
+
+
+                <TextView
+                    android:id="@+id/myTextView"
+                    android:paddingTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textStyle="bold"
+                    android:text="Dish Info"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/dish_info_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:textStyle="italic"
+                    android:text="Egyptian food , one of the famouse dishes in Egypt"
+                    android:textColor="@color/md_grey_600"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
