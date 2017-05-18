@@ -17,7 +17,7 @@ import java.util.Locale;
 import com.homecooked.karim.homecooked.model.Cooker;
 
 /**
- * Created by cazankova on 11/05/2017.
+ * Created by karim on 11/05/2017.
  */
 
 public class CookerGridAdapter extends BaseAdapter {
@@ -28,7 +28,7 @@ public class CookerGridAdapter extends BaseAdapter {
 
     public CookerGridAdapter(Context c, List<Cooker> cookerItems) {
 
-        mContext = c;
+        mContext = b;
 
         this.cookerItems = cookerItems;
         cookerItemsSearched = new ArrayList<Cooker>();
