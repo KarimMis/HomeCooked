@@ -82,8 +82,6 @@ public class ShowSingleCookerInfo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(com.homecooked.karim.homecooked.R.layout.activity_show_single_cooker_info);
 
-        // this is Test for VCS
-        String VCS = "karim";
 
         // bring back ID which it's inserted in DB - hint it's has the same value for Authentication ID
         InsertedIDtoDB = getIntent().getStringExtra("InsertedIDtoDB");
